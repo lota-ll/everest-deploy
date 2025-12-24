@@ -1,0 +1,60 @@
+{
+    "Internal": {
+        "ChargePointId": "CP001",
+        "CentralSystemURI": "ws://192.168.20.20:8092/CP001",
+        "ChargeBoxSerialNumber": "CP001",
+        "ChargePointModel": "EVerest Simulator",
+        "ChargePointVendor": "CyberRange",
+        "FirmwareVersion": "1.0",
+        "LogMessagesFormat": ["log", "html"]
+    },
+    "Core": {
+        "AuthorizeRemoteTxRequests": true,
+        "ClockAlignedDataInterval": 900,
+        "ConnectionTimeOut": 30,
+        "ConnectorPhaseRotation": "0.RST,1.RST,2.RST",
+        "GetConfigurationMaxKeys": 100,
+        "HeartbeatInterval": 60,
+        "LocalAuthorizeOffline": true,
+        "LocalPreAuthorize": false,
+        "MeterValuesAlignedData": "Energy.Active.Import.Register",
+        "MeterValuesSampledData": "Energy.Active.Import.Register,SoC,Voltage,Current.Import,Power.Active.Import",
+        "MeterValueSampleInterval": 10,
+        "NumberOfConnectors": 2,
+        "ResetRetries": 1,
+        "StopTransactionOnEVSideDisconnect": true,
+        "StopTransactionOnInvalidId": true,
+        "StopTxnAlignedData": "Energy.Active.Import.Register",
+        "StopTxnSampledData": "Energy.Active.Import.Register",
+        "SupportedFeatureProfiles": "Core,FirmwareManagement,RemoteTrigger,Reservation,LocalAuthListManagement,SmartCharging",
+        "TransactionMessageAttempts": 3,
+        "TransactionMessageRetryInterval": 10,
+        "UnlockConnectorOnEVSideDisconnect": true
+    },
+    "FirmwareManagement": {
+        "SupportedFileTransferProtocols": "FTP"
+    },
+    "LocalAuthListManagement": {
+        "LocalAuthListEnabled": true,
+        "LocalAuthListMaxLength": 42,
+        "SendLocalListMaxLength": 42
+    },
+    "SmartCharging": {
+        "ChargeProfileMaxStackLevel": 42,
+        "ChargingScheduleAllowedChargingRateUnit": "Current,Power",
+        "ChargingScheduleMaxPeriods": 42,
+        "MaxChargingProfilesInstalled": 42
+    },
+    "Security": {
+        "SecurityProfile": 0,
+        "SendSecurityEvents": false
+    },
+    "PnC": {
+        "ISO15118CertificateManagementEnabled": false,
+        "ISO15118PnCEnabled": false,
+        "ContractValidationOffline": true
+    },
+    "CostAndPrice": {
+        "CustomDisplayCostAndPrice": false
+    }
+}
